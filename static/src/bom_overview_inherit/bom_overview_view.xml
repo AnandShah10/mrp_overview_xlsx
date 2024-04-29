@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="mrp_overview_xlsx.BomOverviewControlPanel" t-inherit="mrp.BomOverviewControlPanel"
+       t-inherit-mode="extension">
+        <xpath expr="//ControlPanel//t" position="inside">
+<!--                            <button t-on-click="print()" type="button"-->
+<!--                                    class="btn btn-primary">Xlsx</button>-->
+                        <button name="%(report_bom_overview_xls)d" help="Print Excel Report"
+                                confirm='Do you want to print a report?' type="action"
+                                class="btn btn-primary" icon="fa-file-excel-o">Print Excel</button>
+        </xpath>
+    </t>
+<!--    <t t-inherit="web.ReportAction" t-inherit-mode="extension">-->
+<!--        <xpath expr="//Layout//t" position="inside">-->
+<!--                                <button t-on-click="print_xlsx()" type="button"-->
+<!--                                    class="btn btn-primary">Xlsx</button>-->
+
+<!--        </xpath>-->
+<!--    </t>-->
+
+</templates>

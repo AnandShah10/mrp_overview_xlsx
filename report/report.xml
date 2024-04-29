@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="report_bom_overview_xls" model="ir.actions.report">
+        <field name="name">BOM Overview Excel</field>
+        <field name="model">mrp.bom</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">mrp_overview_xlsx.report_bom_overview</field>
+        <field name="report_file">mrp_overview_xlsx.report_bom_overview</field>
+        <field name="binding_model_id" ref="model_mrp_bom"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>
